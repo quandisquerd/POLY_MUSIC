@@ -1,0 +1,28 @@
+{
+  "musics": [
+    {
+      "id": 1,
+      "name": "gặp mẹ trong mơ remix",
+      "image": "https://res.cloudinary.com/dw6wgytc3/image/upload/v1691758391/NODEJS/xgqni7cuhrbwip18cxwg.jpg",
+      "file": "https://res.cloudinary.com/dw6wgytc3/video/upload/v1691758401/NODEJS/n5elxs0wuqx2a1hiptmt.mp3"
+    },
+    {
+      "name": "vũ đình quân",
+      "image": "https://res.cloudinary.com/dw6wgytc3/image/upload/v1691759760/NODEJS/xcw6ogn90wn0om1vhv73.jpg",
+      "file": "https://res.cloudinary.com/dw6wgytc3/video/upload/v1691759756/NODEJS/x8xuqicjaqb6fxii1jft.mp3",
+      "id": 2
+    },
+    {
+      "name": "BIRTHDAY SEX ft SHADOW OF THE SUN REMIX ",
+      "image": "https://res.cloudinary.com/dw6wgytc3/image/upload/v1691825747/NODEJS/vrk4wstbbfmnnptqllh8.jpg",
+      "file": "https://res.cloudinary.com/dw6wgytc3/video/upload/v1691825786/NODEJS/gczv7vyeahhmi3odei29.mp3",
+      "id": 3
+    },
+    {
+      "name": "Quá Khứ Anh Không Thể Quên Remix",
+      "image": "https://res.cloudinary.com/dw6wgytc3/image/upload/v1691853434/NODEJS/abrhvhosvvb13xougbi7.jpg",
+      "file": "https://res.cloudinary.com/dw6wgytc3/video/upload/v1691853502/NODEJS/nvbiacswuf6xfavoqsyt.mp3",
+      "id": 4
+    }
+  ]
+}
