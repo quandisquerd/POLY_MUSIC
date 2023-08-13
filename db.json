@@ -23,6 +23,12 @@
       "image": "https://res.cloudinary.com/dw6wgytc3/image/upload/v1691853434/NODEJS/abrhvhosvvb13xougbi7.jpg",
       "file": "https://res.cloudinary.com/dw6wgytc3/video/upload/v1691853502/NODEJS/nvbiacswuf6xfavoqsyt.mp3",
       "id": 4
+    },
+    {
+      "name": "Ecstasy Chè Thái Vol 7",
+      "image": "https://res.cloudinary.com/dw6wgytc3/image/upload/v1691942199/NODEJS/ktqzovzuzr0iazx6g0av.jpg",
+      "file": "https://res.cloudinary.com/dw6wgytc3/video/upload/v1691942287/NODEJS/ifq6eqdzoadxwwzzvivv.mp3",
+      "id": 5
     }
   ]
 }
