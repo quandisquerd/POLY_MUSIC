@@ -114,7 +114,7 @@ const Musics = () => {
     const outerRef:any = useRef(null);
     const [isDragging, setIsDragging] = useState(false);
     const [widthPercentage, setWidthPercentage] = useState(50);
-    const handleMouseDown = (e) => {
+    const handleMouseDown = (e:any) => {
         setIsDragging(true);
     };
 
@@ -165,7 +165,7 @@ const Musics = () => {
                                                             <source src={data.file} />
                                                         </audio>
                                                         <hr />
-                                                        {isCurrentPlaying ? <div className="loaders" style={{ marginBottom: '-30px' }}>
+                                                        {isCurrentPlaying && isPlaying ? <div className="loaders" style={{ marginBottom: '-30px' }}>
                                                             <div className="bar green"></div>
                                                             <div className="bar yellow"></div>
                                                             <div className="bar blue"></div>
