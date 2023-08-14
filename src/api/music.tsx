@@ -6,7 +6,7 @@ const musicApi = createApi({
     reducerPath: 'music',
     tagTypes: ['Music'],
     baseQuery: fetchBaseQuery({
-        baseUrl: `https://81e0-2402-800-61ce-4ac7-9c40-834-308f-7a27.ngrok-free.app`,
+        baseUrl: `https://localhots:3000`,
         fetchFn: async (...args) => {
             await pause(1000)
             return fetch(...args)
