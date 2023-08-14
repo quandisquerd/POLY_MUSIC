@@ -6,7 +6,7 @@ const musicApi = createApi({
     reducerPath: 'music',
     tagTypes: ['Music'],
     baseQuery: fetchBaseQuery({
-        baseUrl: `https://localhots:3000`,
+        baseUrl: `http://localhots:3000`,
         fetchFn: async (...args) => {
             await pause(1000)
             return fetch(...args)
