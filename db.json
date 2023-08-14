@@ -1,18 +1,6 @@
 {
   "musics": [
     {
-      "id": 1,
-      "name": "gặp mẹ trong mơ remix",
-      "image": "https://res.cloudinary.com/dw6wgytc3/image/upload/v1691758391/NODEJS/xgqni7cuhrbwip18cxwg.jpg",
-      "file": "https://res.cloudinary.com/dw6wgytc3/video/upload/v1691758401/NODEJS/n5elxs0wuqx2a1hiptmt.mp3"
-    },
-    {
-      "name": "vũ đình quân",
-      "image": "https://res.cloudinary.com/dw6wgytc3/image/upload/v1691759760/NODEJS/xcw6ogn90wn0om1vhv73.jpg",
-      "file": "https://res.cloudinary.com/dw6wgytc3/video/upload/v1691759756/NODEJS/x8xuqicjaqb6fxii1jft.mp3",
-      "id": 2
-    },
-    {
       "name": "BIRTHDAY SEX ft SHADOW OF THE SUN REMIX ",
       "image": "https://res.cloudinary.com/dw6wgytc3/image/upload/v1691825747/NODEJS/vrk4wstbbfmnnptqllh8.jpg",
       "file": "https://res.cloudinary.com/dw6wgytc3/video/upload/v1691825786/NODEJS/gczv7vyeahhmi3odei29.mp3",
@@ -29,6 +17,31 @@
       "image": "https://res.cloudinary.com/dw6wgytc3/image/upload/v1691942199/NODEJS/ktqzovzuzr0iazx6g0av.jpg",
       "file": "https://res.cloudinary.com/dw6wgytc3/video/upload/v1691942287/NODEJS/ifq6eqdzoadxwwzzvivv.mp3",
       "id": 5
+    },
+    {
+      "name": "Nếu Như Phải Mất Nhau Remix",
+      "image": "https://res.cloudinary.com/dw6wgytc3/image/upload/v1692002586/NODEJS/mjbuyr6m5fnqwqxu3vg2.jpg",
+      "file": "https://res.cloudinary.com/dw6wgytc3/video/upload/v1692002589/NODEJS/mseswjqt5ltm6nlbvq5j.mp3",
+      "id": 6
+    },
+    {
+      "name": "Đánh Mất Em Remix",
+      "image": "https://res.cloudinary.com/dw6wgytc3/image/upload/v1692002728/NODEJS/zmggbp3e9fpsokxbrac4.jpg",
+      "file": "https://res.cloudinary.com/dw6wgytc3/video/upload/v1692002733/NODEJS/mxhbvqnvrngs4kadzm4g.mp3",
+      "id": 7
+    },
+    {
+      "name": "Sợ Ngày Mai Em Đi Mất Remix",
+      "image": "https://res.cloudinary.com/dw6wgytc3/image/upload/v1692002908/NODEJS/xsrgqyqlq5qhnjkh0xzq.jpg",
+      "file": "https://res.cloudinary.com/dw6wgytc3/video/upload/v1692002914/NODEJS/evkfsgeqgafluyv9jec9.mp3",
+      "id": 8
+    },
+    {
+      "name": "Em Là Kẻ Đáng Thương Remix",
+      "image": "https://res.cloudinary.com/dw6wgytc3/image/upload/v1692003078/NODEJS/gmilhxuzfrzvbyvnlpa6.jpg",
+      "file": "https://res.cloudinary.com/dw6wgytc3/video/upload/v1692003085/NODEJS/ciis2dif4iam7hyrgtrq.mp3",
+      "id": 9
     }
-  ]
+  ],
+  "categories": []
 }
