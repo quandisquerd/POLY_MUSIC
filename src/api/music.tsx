@@ -38,7 +38,7 @@ const musicApi = createApi({
         }),
         addMusic: builder.mutation({
             query: (music) => ({
-                url: `/musics`,
+                url: `/musics/add`,
                 method: "POST",
                 body: music
             }),
