@@ -1,46 +1,65 @@
 {
+  "middlewares": {
+    "before": [
+      "no-cors"
+    ]
+  },
   "musics": [
     {
       "name": "BIRTHDAY SEX ft SHADOW OF THE SUN REMIX ",
       "image": "https://res.cloudinary.com/dw6wgytc3/image/upload/v1691825747/NODEJS/vrk4wstbbfmnnptqllh8.jpg",
       "file": "https://res.cloudinary.com/dw6wgytc3/video/upload/v1691825786/NODEJS/gczv7vyeahhmi3odei29.mp3",
-      "id": 3
+      "id": 3,
+      "Album_id": 1
     },
     {
       "name": "Quá Khứ Anh Không Thể Quên Remix",
       "image": "https://res.cloudinary.com/dw6wgytc3/image/upload/v1691853434/NODEJS/abrhvhosvvb13xougbi7.jpg",
       "file": "https://res.cloudinary.com/dw6wgytc3/video/upload/v1691853502/NODEJS/nvbiacswuf6xfavoqsyt.mp3",
-      "id": 4
+      "id": 4,
+      "Album_id": 2
     },
     {
       "name": "Ecstasy Chè Thái Vol 7",
       "image": "https://res.cloudinary.com/dw6wgytc3/image/upload/v1691942199/NODEJS/ktqzovzuzr0iazx6g0av.jpg",
       "file": "https://res.cloudinary.com/dw6wgytc3/video/upload/v1691942287/NODEJS/ifq6eqdzoadxwwzzvivv.mp3",
-      "id": 5
+      "id": 5,
+      "Album_id": 1
     },
     {
       "name": "Nếu Như Phải Mất Nhau Remix",
       "image": "https://res.cloudinary.com/dw6wgytc3/image/upload/v1692002586/NODEJS/mjbuyr6m5fnqwqxu3vg2.jpg",
       "file": "https://res.cloudinary.com/dw6wgytc3/video/upload/v1692002589/NODEJS/mseswjqt5ltm6nlbvq5j.mp3",
-      "id": 6
+      "id": 6,
+      "Album_id": 2
     },
     {
       "name": "Đánh Mất Em Remix",
       "image": "https://res.cloudinary.com/dw6wgytc3/image/upload/v1692002728/NODEJS/zmggbp3e9fpsokxbrac4.jpg",
       "file": "https://res.cloudinary.com/dw6wgytc3/video/upload/v1692002733/NODEJS/mxhbvqnvrngs4kadzm4g.mp3",
-      "id": 7
+      "id": 7,
+      "Album_id": 2
     },
     {
       "name": "Sợ Ngày Mai Em Đi Mất Remix",
       "image": "https://res.cloudinary.com/dw6wgytc3/image/upload/v1692002908/NODEJS/xsrgqyqlq5qhnjkh0xzq.jpg",
       "file": "https://res.cloudinary.com/dw6wgytc3/video/upload/v1692002914/NODEJS/evkfsgeqgafluyv9jec9.mp3",
-      "id": 8
+      "id": 8,
+      "Album_id": 2
     },
     {
       "name": "Em Là Kẻ Đáng Thương Remix",
       "image": "https://res.cloudinary.com/dw6wgytc3/image/upload/v1692003078/NODEJS/gmilhxuzfrzvbyvnlpa6.jpg",
       "file": "https://res.cloudinary.com/dw6wgytc3/video/upload/v1692003085/NODEJS/ciis2dif4iam7hyrgtrq.mp3",
-      "id": 9
+      "id": 9,
+      "Album_id": 2
+    },
+    {
+      "name": "Ngày Mai Người Ta Lấy Chồng Remix",
+      "image": "https://res.cloudinary.com/dw6wgytc3/image/upload/v1692042097/NODEJS/ujwghbtihj46nrayuic8.jpg",
+      "file": "https://res.cloudinary.com/dw6wgytc3/video/upload/v1692042121/NODEJS/ttxzvjgto6q4oeyuqrnx.mp3",
+      "id": 10,
+      "Album_id":2
     }
   ],
   "categories": []

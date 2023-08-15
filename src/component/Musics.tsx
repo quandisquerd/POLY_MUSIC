@@ -21,6 +21,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faPause, faFastForward } from '@fortawesome/free-solid-svg-icons';
 const Musics = () => {
     const { data, isLoading } = useGetMusicQuery('')
+    console.log(data);
+    
     const [isPlaying, setIsPlaying] = useState(false);
     const [currentPlayingIndex, setCurrentPlayingIndex] = useState(null); // State lưu index bài hát đang chạy
     const [widthPercentages, setWidthPercentages] = useState<any>()
@@ -144,7 +146,7 @@ const Musics = () => {
                             </div>
                         </div>
                     </div>
-                    {isLoading ? (<Skeleton />) : (data?.map((data: any, index: any) => {
+                    {isLoading ? (<Skeleton />) : (data?.data?.map((data: any, index: any) => {
                         const isCurrentPlaying = index === currentPlayingIndex;
                         return (
                             <>

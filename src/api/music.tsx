@@ -1,12 +1,16 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 import { pause } from '../util/pause'
-
+const headers = {
+    'Content-Type': 'application/json',
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Methods': 'POST,PATCH,OPTIONS'
+}
 
 const musicApi = createApi({
     reducerPath: 'music',
     tagTypes: ['Music'],
     baseQuery: fetchBaseQuery({
-        baseUrl: `http://localhost:3000`,
+        baseUrl: `https://node-postgresql-api-git-master-quandisquerd.vercel.app/api/v1`,
         fetchFn: async (...args) => {
             await pause(1000)
             return fetch(...args)
@@ -14,8 +18,10 @@ const musicApi = createApi({
     }),
     endpoints: (builder) => ({
         getMusic: builder.query({
-            query: () => `/musics`,
-            providesTags: ['Music']
+            query: () => ({
+                url: `/musics`,
+            }),
+            providesTags: ['Music'],
         }),
         getOneMusic: builder.query({
             query: (id) => `/musics/${id}`,
