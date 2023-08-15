@@ -21,8 +21,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faPause, faFastForward } from '@fortawesome/free-solid-svg-icons';
 const Musics = () => {
     const { data, isLoading } = useGetMusicQuery('')
-    console.log(data);
-    
     const [isPlaying, setIsPlaying] = useState(false);
     const [currentPlayingIndex, setCurrentPlayingIndex] = useState(null); // State lưu index bài hát đang chạy
     const [widthPercentages, setWidthPercentages] = useState<any>()
@@ -113,14 +111,14 @@ const Musics = () => {
 
 
 
-    const outerRef:any = useRef(null);
+    const outerRef: any = useRef(null);
     const [isDragging, setIsDragging] = useState(false);
     const [widthPercentage, setWidthPercentage] = useState(50);
-    const handleMouseDown = (e:any) => {
+    const handleMouseDown = (e: any) => {
         setIsDragging(true);
     };
 
-    const handleMouseMove = (e:any) => {
+    const handleMouseMove = (e: any) => {
         if (!isDragging) return;
 
         const outerWidth = outerRef.current.offsetWidth;
@@ -146,7 +144,21 @@ const Musics = () => {
                             </div>
                         </div>
                     </div>
-                    {isLoading ? (<Skeleton />) : (data?.data?.map((data: any, index: any) => {
+                    {isLoading ? (<><div className="loader">
+                        <div className="bar1"></div>
+                        <div className="bar2"></div>
+                        <div className="bar3"></div>
+                        <div className="bar4"></div>
+                        <div className="bar5"></div>
+                        <div className="bar6"></div>
+                        <div className="bar7"></div>
+                        <div className="bar8"></div>
+                        <div className="bar9"></div>
+                        <div className="bar10"></div>
+                        <div className="bar11"></div>
+                        <div className="bar12"></div>
+                    </div> 
+                     <h1 style={{paddingTop:'500px'}}></h1></>) : (data?.data?.map((data: any, index: any) => {
                         const isCurrentPlaying = index === currentPlayingIndex;
                         return (
                             <>
@@ -163,7 +175,7 @@ const Musics = () => {
                                                             <h4 style={{ color: 'white' }}>{data.name}</h4>
                                                             <p>10 November, 2019</p>
                                                         </div>
-                                                        <audio  id={`audio-${index}`} preload="auto" onTimeUpdate={(event) => handleTimeUpdate(index, event, data.name, data.image)}>
+                                                        <audio id={`audio-${index}`} preload="auto" onTimeUpdate={(event) => handleTimeUpdate(index, event, data.name, data.image)}>
                                                             <source src={data.file} />
                                                         </audio>
                                                         <hr />
@@ -280,11 +292,11 @@ const Musics = () => {
                     <div style={{
                         width: '110px', marginLeft: '20px', marginTop: '24px'
                     }}>
-                        <FontAwesomeIcon icon={faFastForward} flip="horizontal" style={{ marginRight: ' 20px', color: 'white' }} onClick={() => handleFastForward(false)} />
+                        <FontAwesomeIcon icon={faFastForward} flip="horizontal" style={{ marginRight: ' 20px', color: 'white' , width:'10%' }} onClick={() => handleFastForward(false)} />
 
                         {isPlaying ? <FontAwesomeIcon color='white' icon={faPause} /> : <FontAwesomeIcon color='red' icon={faPlay} />}
 
-                        <FontAwesomeIcon icon={faFastForward} style={{ marginLeft: '20px', color: 'white' }} onClick={() => handleFastForward(true)} />
+                        <FontAwesomeIcon icon={faFastForward} style={{ marginLeft: '20px', color: 'white', width: '10%' }} onClick={() => handleFastForward(true)} />
                     </div>
                     <span style={{ color: 'red', marginTop: '27px', width: '40px', fontSize: '12px' }}>{startmin} :{startsec} </span>
                     <div style={{ marginLeft: '15px', width: '60%', marginTop: '5px' }} className='outer' ref={outerRef}>
@@ -296,7 +308,7 @@ const Musics = () => {
                             marginBottom: '5px',
                             position: 'relative',
                             transition: 'width 0.2s',
-                        }} 
+                        }}
                             className="outer-div" >
                             <div style={{
                                 width: `${widthPercentages}%`,
@@ -305,7 +317,7 @@ const Musics = () => {
                                 marginTop: '30px',
                                 position: 'relative',
                                 display: 'flex',
-                            }}onMouseDown={handleMouseDown}
+                            }} onMouseDown={handleMouseDown}
                                 className="inner-div" >
 
                             </div>

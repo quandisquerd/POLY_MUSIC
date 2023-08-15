@@ -5,20 +5,25 @@ import {
     Form,
     Input,
     Upload,
-    Skeleton
+    Skeleton,
+    Select
 } from 'antd';
 import { useParams, useNavigate } from 'react-router-dom'
 import { useAddMusicMutation, useGetOneMusicQuery, useUpdateMusicMutation } from '../../api/music';
 import axios from 'axios';
 import { message } from 'antd';
 import { pause } from '../../util/pause';
+import { useGetAlbumQuery } from '../../api/album';
 
 const Add: React.FC = () => {
+    const { data, isLoading } = useGetAlbumQuery('')
+
     const [form] = Form.useForm()
     const [image, setImage] = useState('')
     const [file, setFile] = useState('')
     const [add] = useAddMusicMutation()
     const [messageApi, contextHolder] = message.useMessage()
+    const [album, setalbum] = useState('')
     const navigate = useNavigate()
 
 
@@ -74,9 +79,12 @@ const Add: React.FC = () => {
             console.error('Upload error:', error);
         }
     };
+    const handleAlbum = (e: any) => {
+        setalbum(e)
+    }
     const onFinish = (value: any) => {
 
-        add({ name: value.name, image: image, file: file })
+        add({ name: value.name, image: image, file: file, album_id: album })
             .unwrap()
             .then(async () => {
                 messageApi.open({
@@ -124,6 +132,16 @@ const Add: React.FC = () => {
                             <div style={{ marginTop: 8 }}>File</div>
                         </div>
                     </Upload>
+                </Form.Item>
+                <Form.Item label="Album">
+                    <Select onChange={(e: any) => handleAlbum(e)}>
+                        {data?.data?.map((data: any) => {
+                            return (<>
+                                <Select.Option value={data.id} >{data.name}</Select.Option>
+                            </>)
+                        })}
+
+                    </Select>
                 </Form.Item>
                 {image && file ? (
                     <Form.Item>

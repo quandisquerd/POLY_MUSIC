@@ -24,7 +24,7 @@ const List = () => {
                     setremoveloading((prewMap: any) => ({ ...prewMap, [id]: false }))
             })
     }
-    const dataSource = data?.map((music: any) => ({
+    const dataSource = data?.data?.map((music: any) => ({
         key: music.id,
         name: music.name,
         image: music.image,
