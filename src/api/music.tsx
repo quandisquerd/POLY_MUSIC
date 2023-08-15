@@ -10,7 +10,7 @@ const musicApi = createApi({
     reducerPath: 'music',
     tagTypes: ['Music'],
     baseQuery: fetchBaseQuery({
-        baseUrl: `https://node-postgresql-api-git-master-quandisquerd.vercel.app/api/v1`,
+        baseUrl: `https://node-postgresql-api-lemon.vercel.app/api`,
         fetchFn: async (...args) => {
             await pause(1000)
             return fetch(...args)
@@ -20,6 +20,8 @@ const musicApi = createApi({
         getMusic: builder.query({
             query: () => ({
                 url: `/musics`,
+                headers:headers,
+                mode: 'cors',
             }),
             providesTags: ['Music'],
         }),
