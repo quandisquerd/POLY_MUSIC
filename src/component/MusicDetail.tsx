@@ -1,8 +1,5 @@
-import React from 'react'
 
-type Props = {}
-
-const MusicDetail = (props: Props) => {
+const MusicDetail = () => {
   return (
     <div>MusicDetail</div>
   )
