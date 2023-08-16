@@ -1,22 +1,22 @@
 import { PlusOutlined } from '@ant-design/icons';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import {
     Button,
     Form,
     Input,
     Upload,
-    Skeleton,
+
     Select
 } from 'antd';
-import { useParams, useNavigate } from 'react-router-dom'
-import { useAddMusicMutation, useGetOneMusicQuery, useUpdateMusicMutation } from '../../api/music';
+import { useNavigate } from 'react-router-dom'
+import { useAddMusicMutation } from '../../api/music';
 import axios from 'axios';
 import { message } from 'antd';
 import { pause } from '../../util/pause';
 import { useGetAlbumQuery } from '../../api/album';
 
 const Add: React.FC = () => {
-    const { data, isLoading } = useGetAlbumQuery('')
+    const { data } = useGetAlbumQuery('')
 
     const [form] = Form.useForm()
     const [image, setImage] = useState('')
